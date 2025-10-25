@@ -10,7 +10,7 @@ st.title("📊 Інтеграція Excel з Python-дашбордом (Streamli
 st.sidebar.header("📂 Завантаження Excel")
 
 uploaded_file = st.sidebar.file_uploader("Завантаж свій Excel-файл", type=["xlsx", "xls"])
-default_path = "sample_large.xlsx"
+default_path = "sample.xlsx"
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
