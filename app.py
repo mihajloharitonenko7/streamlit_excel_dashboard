@@ -17,7 +17,7 @@ if uploaded_file is not None:
     st.success("✅ Завантажено власний файл.")
 elif os.path.exists(default_path):
     df = pd.read_excel(default_path)
-    st.success("✅ Автоматично завантажено sample_large.xlsx із локальної папки.")
+    st.success("✅ Автоматично завантажено sample.xlsx із локальної папки.")
 else:
     st.error("❌ Файл не знайдено. Завантаж Excel-файл вручну.")
     st.stop()
